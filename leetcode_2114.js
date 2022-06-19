@@ -1,13 +1,11 @@
-var s: string[] = [
+var s = [
     "asdf asdf asdf asdf asdf",
     "asdfasdf asdf asdf",
     "asdf asdf asdf asdf asdf",
 ];
-
-function mostWordsFound(sentences: string[]): number {
-    var max: number = 0;
-    var temp: number = 0;
-
+function mostWordsFound(sentences) {
+    var max = 0;
+    var temp = 0;
     for (var i = 0; i < sentences.length; i++) {
         temp = sentences[i].split(" ").length;
         if (temp > max) {
@@ -16,5 +14,4 @@ function mostWordsFound(sentences: string[]): number {
     }
     return max;
 }
-
 console.log(mostWordsFound(s));
